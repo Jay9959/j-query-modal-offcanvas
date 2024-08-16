@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offcanvas</title>
+    <!-- REMIX ICON  -->
+    <link rel="stylesheet" href="remix/remixicon.css" type="text/css">
+    <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="css/offcenvas.css" type="text/css">
+</head>
+
+<body>
+
+    <div class="btn">
+        <button type="button" class="cenvas-toggle">offcenvas-toggle</button>
+    </div>
+
+    <!-- cenvas -->
+
+    <div class="cenvas" style="display: none;">
+        <div class="cenvas-header">
+            <h5>cenvas with body scrolling</h5>
+            <i class="ri-close-large-line"></i>
+        </div>
+        <div class="cenvas-body">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nihil ex quibusdam molestias porro,
+                dolor doloremque iusto, veritatis nisi ad iste? In, possimus aspernatur cupiditate provident molestias
+                earum veritatis iusto quisquam asperiores corporis ut odio laborum quos, illo est sapiente! Ratione
+                expedita harum quas eveniet natus laborum accusamus Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Voluptate expedita vero iste veritatis fugit voluptas, impedit atque accusamus iusto eveniet ut
+                placeat vel quae assumenda, adipisci ipsum error ab distinctio optio voluptates repellat.
+            </p>
+        </div>
+        <a href="javascript:void(0)" class="close">close</a>
+    </div>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $(".close").click(function () {
+                $(".cenvas").slideUp();
+            });
+
+            $("i").click(function () {
+                $(".cenvas").slideUp();
+            });
+
+            $(".cenvas-toggle").click(function () {
+                $(".cenvas").slideToggle();
+            });
+        });
+    </script>
+</body>
+
+</html>

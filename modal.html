@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <!-- REMIX ICON  -->
+    <link rel="stylesheet" href="remix/remixicon.css" type="text/css">
+    <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="css/modal.css" type="text/css">
+</head>
+
+<body>
+
+    <div class="btn">
+        <button type="button" class="modal-toggle">modal-toggle</button>
+    </div>
+
+    <!-- modal  -->
+
+    <div class="modal" style="display: none;">
+        <div class="modal-header">
+            <h5>Offcanvas with body scrolling</h5>
+            <i class="ri-close-large-line"></i>
+        </div>
+        <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur nihil ex quibusdam molestias porro,
+                dolor doloremque iusto, veritatis nisi ad iste? In, possimus aspernatur cupiditate provident
+                molestias
+                earum veritatis iusto quisquam asperiores corporis ut odio laborum quos, illo est sapiente! Ratione
+                expedita harum quas eveniet natus laborum accusamus
+            </p>
+            <a href="javascript:void(0)" class="close">close</a>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $(".modal-toggle").click(function () {
+                $(".modal").fadeToggle();
+            });
+
+            $(".close").click(function () {
+                $(".modal").fadeToggle();
+            });
+
+            $("i").click(function () {
+                $(".modal").fadeToggle();
+            });
+
+            $(".modal-toggle").click(function () {
+                $(".modal").addClass("abc");
+            });
+
+        });
+    </script>
+</body>
+
+</html>

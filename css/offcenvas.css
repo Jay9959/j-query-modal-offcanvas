@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+.cenvas {
+    background-color: rgba(0, 0, 0, 0.374);
+    color: rgba(255, 255, 255, 0.805);
+    width: 30%;
+    height: 100vh;
+}
+
+h5 {
+    font-size: 30px;
+    color: skyblue;
+    background-color: blue;
+}
+
+.cenvas-header i {
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    margin-left: 90%;
+}
+
+p {
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding: 10px;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+button {
+    margin: 10px 20px;
+    padding: 10px 20px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
